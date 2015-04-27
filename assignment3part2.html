@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Github Gists</title>
+	<script src ="gistrequest.js"></script>
+</head>
+
+<body>
+    <h1>Github Gists</h1>
+    <section>
+    <form>
+    <label><h5>Please choose from the Pull Down list in order to select the number of pages of results to display for your search</h5></label>
+    <select id = "pages">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </form>
+    </section>
+    <section>
+    </br>
+    <form>
+    <label><b>Please check from the list below in order to filter your search</b></label>
+    <div>
+        <input type="checkbox" name= "Python">
+        <label>Python</label>
+    <div/>
+    <div>
+        <input type="checkbox" name= "JSON">
+        <label>JSON</label>
+    <div/>
+    <div>
+        <input type="checkbox" name= "JavaScript">
+        <label>JavaScript</label>
+    <div/>
+    <div>
+        <input type="checkbox" name= "SQL">
+        <label>SQL</label>
+    <div/>
+    </form>
+    </section>
+
+    <input type="button" name="Search" value ="Search" onclick= "getGists()" />
+    </br>
+    <section>
+        <ul id="results">
+        </ul>
+    </section>
+</body>
+</html>
