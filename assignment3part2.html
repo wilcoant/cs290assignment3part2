@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Github Gists</title>
@@ -24,25 +24,25 @@
     <form>
     <label><b>Please check from the list below in order to filter your search</b></label>
     <div>
-        <input type="checkbox" name= "Python">
+        <input id= "Python" type="checkbox" name= "Python">
         <label>Python</label>
     <div/>
     <div>
-        <input type="checkbox" name= "JSON">
+        <input id="JSON" type="checkbox" name= "JSON"/>
         <label>JSON</label>
     <div/>
     <div>
-        <input type="checkbox" name= "JavaScript">
-        <label>JavaScript</label>
+        <input id="JavaScript" type="checkbox" name= "JavaScript"/>
+        <label>JavaScript</label>       
     <div/>
     <div>
-        <input type="checkbox" name= "SQL">
+        <input id="SQL" type="checkbox" name= "SQL">
         <label>SQL</label>
     <div/>
     </form>
     </section>
 
-    <input type="button" name="Search" value ="Search" onclick= "getGists()" />
+    <input type="button" name="Search" value ="Search" id="search" onclick= "getGists()" />
     </br>
     <section>
         <ul id="results">
